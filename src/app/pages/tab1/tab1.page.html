@@ -8,7 +8,7 @@
   <ion-grid>
     <ion-row *ngFor="let item of data; let i=index;">
       <!-- data kena tally dgn tab1.page.ts -->
-      <ion-card (click)="submit(item, i)">
+      <ion-card (click)="submit(i)">
         <ion-card-header>
           <ion-card-title>{{item.title}}</ion-card-title>
           <ion-card-subtitle>{{item.description}}</ion-card-subtitle>
