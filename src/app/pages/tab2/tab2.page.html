@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>tab2</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      List of Bags
+    </ion-list-header>
+
+    <ion-item *ngFor="let item of data" (click)="presentToast(item.title)">
+      <ion-avatar slot="start">
+        <img src="../../assets/{{item.image}}"/>
+      </ion-avatar>
+      <ion-label>
+        <h2>{{item.title}}</h2>
+        <h3>RM {{item.price}}</h3>
+        <p>{{item.description}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
